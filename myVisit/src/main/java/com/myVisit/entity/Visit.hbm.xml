@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="com.myVisit.Visit" table="VISIT" catalog="oracle">
+		<id name="visitId" type="long">
+			<column name="STOCK_ID" />
+			<generator class="identity" />
+		</id>
+		<property name="date" type="java.util.Date">
+			<column name="DATE" not-null="true"/>
+		</property>
+		<property name="hour" type="int">
+			<column name="HOUR" not-null="true"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>
+
